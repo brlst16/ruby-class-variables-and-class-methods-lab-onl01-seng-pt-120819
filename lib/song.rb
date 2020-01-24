@@ -84,12 +84,12 @@ attr_accessor :name, :artist, :genre
     
     artist_count = {}
     @@artists.each do |artist|
-      binding.pry 
       if artist_count[artist] 
         artist_count[artist] += 1
       else
         artist_count[artist] = 1
       end
+      binding.pry 
     end
     artist_count
   end
